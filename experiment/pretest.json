@@ -2,38 +2,174 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "What is the primary principle underlying the haemagglutination assay?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "Agglutination of red blood cells by antibodies",
+        "b": "Lysis of red blood cells by complement",
+        "c": "Agglutination of red blood cells by viruses or antibodies",
+        "d": "Phagocytosis of red blood cells by macrophages"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
-      },
-      "correctAnswer": "a",
-      "difficulty": "beginner"
-    },
-    {
-      "question": "This is a Sample Question 2?",
-      "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
-      },
-      "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "",
+        "b": "",
+        "c": "Hemagglutination relies on the capability of viruses or antibodies to bind and cross-link red blood cells, causing them to clump.",
+        "d": ""
       },
       "correctAnswer": "c",
       "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following viruses is commonly detected using haemagglutination assay?",
+      "answers": {
+        "a": "HIV",
+        "b": "Influenza virus",
+        "c": "Hepatitis B virus",
+        "d": "Papillomavirus"
+      },
+      "explanations": {
+        "a": "",
+        "b": "Influenza virus is well known for possessing hemagglutinin proteins that bind to red blood cells.",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What does a positive haemagglutination result indicate?",
+      "answers": {
+        "a": "Absence of virus or haemagglutinin",
+        "b": "Presence of antibodies that inhibit agglutination",
+        "c": "Formation of a diffuse red blood cell layer",
+        "d": "Formation of a compact button of red blood cells at the bottom of the well"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "Agglutinated RBCs form a lattice/clump structure that settles as a diffuse red layer (mat) coating the well floor.",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "In a haemagglutination inhibition (HI) assay, what does inhibition of agglutination indicate?",
+      "answers": {
+        "a": "Absence of specific antibodies",
+        "b": "Presence of specific antibodies against the virus",
+        "c": "Contamination of the sample",
+        "d": "Non-specific binding"
+      },
+      "explanations": {
+        "a": "",
+        "b": "Specific antibodies bind to the viral hemagglutinin and prevent it from agglutinating the red blood cells.",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Which type of red blood cells are commonly used in influenza haemagglutination assays?",
+      "answers": {
+        "a": "Human O-negative RBCs",
+        "b": "Chicken, guinea pig, or human RBCs",
+        "c": "Only bovine RBCs",
+        "d": "Sheep RBCs exclusively"
+      },
+      "explanations": {
+        "a": "",
+        "b": "Chicken, guinea pig, or human RBCs are commonly used because they contain the sialic acid receptors that influenza viruses bind to.",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the typical concentration of red blood cells used in haemagglutination assays?",
+      "answers": {
+        "a": "10-15%",
+        "b": "5-10%",
+        "c": "0.5-1%",
+        "d": "20-25%"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "A concentration of 0.5-1% red blood cells is optimal to visualize agglutination without causing overcrowding of cells.",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What is the haemagglutination titer?",
+      "answers": {
+        "a": "The lowest dilution showing complete agglutination",
+        "b": "The highest dilution showing complete agglutination",
+        "c": "The concentration of antibodies in the serum",
+        "d": "The number of viral particles per milliliter"
+      },
+      "explanations": {
+        "a": "",
+        "b": "The HA titer is defined as the highest dilution (lowest concentration) of the virus sample that results in complete hemagglutination.",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Why is it important to use fresh red blood cells in haemagglutination assays?",
+      "answers": {
+        "a": "Old RBCs agglutinate spontaneously",
+        "b": "Fresh RBCs have better receptor availability and membrane integrity",
+        "c": "Old RBCs are more expensive",
+        "d": "Fresh RBCs contain more haemoglobin"
+      },
+      "explanations": {
+        "a": "",
+        "b": "Fresh red blood cells maintain membrane integrity and have active, accessible sialic acid receptors required for binding.",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "What does a 'mat' or 'shield' pattern indicate in a haemagglutination assay?",
+      "answers": {
+        "a": "Negative result with RBC button formation",
+        "b": "Positive agglutination result",
+        "c": "Contaminated sample",
+        "d": "Hemolysis of red blood cells"
+      },
+      "explanations": {
+        "a": "",
+        "b": "A positive agglutination result is characterized by a diffuse mat or shield pattern across the bottom of the well.",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which of the following can cause false-positive results in haemagglutination assays?",
+      "answers": {
+        "a": "Use of diluted samples",
+        "b": "Bacterial contamination or non-specific agglutinins",
+        "c": "Use of fresh RBCs",
+        "d": "Proper incubation time"
+      },
+      "explanations": {
+        "a": "",
+        "b": "Bacterial contamination can lead to spontaneous agglutination of RBCs, creating a false-positive result.",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
     }
   ]
 }
