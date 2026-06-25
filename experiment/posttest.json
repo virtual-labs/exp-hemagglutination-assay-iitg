@@ -2,37 +2,173 @@
   "version": 2.0,
   "questions": [
     {
-      "question": "This is a Sample Question 1?",
+      "question": "Which of the following best explains why the pH of the phosphate-buffered saline (PBS) used in haemagglutination assays is critical?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "pH affects the charge and integrity of sialic acid receptors on RBCs, influencing binding efficiency",
+        "b": "pH determines the concentration of red blood cells required",
+        "c": "pH controls the rate of complement activation",
+        "d": "pH affects only the colour of the RBC suspension and has no functional role"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "The pH of the PBS is critical because it directly influences the charge and structural integrity of the sialic acid receptors on RBC membranes.",
+        "b": "",
+        "c": "",
+        "d": ""
       },
       "correctAnswer": "a",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "Why is it necessary to include a 'cell control' (RBCs only, no serum or virus) in a haemagglutination inhibition assay?",
+      "answers": {
+        "a": "To ensure RBCs do not spontaneously agglutinate and form a false-positive baseline",
+        "b": "To calculate the maximum possible HAU of the virus",
+        "c": "To serve as a positive control for inhibition",
+        "d": "To confirm that the diluent does not lyse RBCs"
+      },
+      "explanations": {
+        "a": "The cell control serves as a baseline check to verify that the RBCs do not spontaneously aggregate in the diluent, avoiding false positives.",
+        "b": "",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "a",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "Which of the following viruses does NOT typically utilise sialic acid receptors and therefore cannot be detected by a conventional haemagglutination assay without modification?",
+      "answers": {
+        "a": "Influenza A",
+        "b": "Parainfluenza virus",
+        "c": "Newcastle disease virus",
+        "d": "Rabies virus"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "",
+        "d": "Rabies virus does not bind to sialic acid receptors; it typically binds to acetylcholine receptors, so it cannot be detected by conventional HA."
+      },
+      "correctAnswer": "d",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "When reading a 96-well V-bottom plate HA assay, which result pattern indicates the endpoint (last well with complete agglutination)?",
+      "answers": {
+        "a": "A small, tight, red button at the very centre of the well",
+        "b": "A uniform red film coating the entire well floor with no streaming",
+        "c": "A partial ring of cells with streaming on tilting the plate",
+        "d": "A compact button forming only at the rim of the well"
+      },
+      "explanations": {
+        "a": "",
+        "b": "The endpoint of complete agglutination is shown by a uniform red film (mat) coating the well floor with no streaming when the plate is tilted.",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": "intermediate"
+    },
+    {
+      "question": "At what temperature is the haemagglutination assay for most influenza strains typically incubated to achieve optimal results?",
+      "answers": {
+        "a": "4°C",
+        "b": "Room temperature (20–25°C)",
+        "c": "37°C",
+        "d": "56°C"
+      },
+      "explanations": {
+        "a": "",
+        "b": "Most influenza HA assays are incubated at room temperature (20–25°C) to allow optimal viral binding and lattice formation.",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
       "difficulty": "beginner"
     },
     {
-      "question": "This is a Sample Question 2?",
+      "question": "What is the purpose of neuraminidase treatment of red blood cells before use in some haemagglutination assays?",
       "answers": {
-        "a": "answer1",
-        "b": "answer2",
-        "c": "answer3",
-        "d": "answer4"
+        "a": "To increase RBC receptor density for influenza viruses",
+        "b": "To remove sialic acid receptors and prevent non-specific agglutination",
+        "c": "To fix RBCs and prolong shelf life",
+        "d": "To enhance complement receptor expression on the RBC surface"
       },
       "explanations": {
-        "a": "Explanation 1  <a href='www.google.com'>here</a>",
-        "b": "Explanation 2",
-        "c": "Explanation 2",
-        "d": "Explanation 2"
+        "a": "",
+        "b": "Neuraminidase cleaves sialic acid residues, helping to eliminate non-specific agglutination in certain serum assays.",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "In a standard haemagglutination titration using 2-fold serial dilutions, if the HA titre is 1:64, how many one-unit (1 HAU) doses are present in the starting undiluted preparation?",
+      "answers": {
+        "a": "16 HAU",
+        "b": "32 HAU",
+        "c": "64 HAU",
+        "d": "128 HAU"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "A titer of 64 indicates that the undiluted sample can be diluted 64-fold to contain exactly 1 HAU (hemagglutinating unit). Thus, there are 64 HAU in the undiluted starting solution.",
+        "d": ""
       },
       "correctAnswer": "c",
+      "difficulty": "advanced"
+    },
+    {
+      "question": "What does a negative result appear as in a V-bottom microtiter plate?",
+      "answers": {
+        "a": "Diffuse mat of cells",
+        "b": "Turbid well",
+        "c": "A compact button of cells at the center of the well",
+        "d": "Rim of cells along the edge"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "In the absence of agglutination, red blood cells settle under gravity to form a tight, compact red button at the center of a V-bottom well.",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "Which microtiter plate is preferred for hemagglutination assays?",
+      "answers": {
+        "a": "Flat-bottom plate",
+        "b": "Round-bottom plate",
+        "c": "V-bottom or U-bottom plate",
+        "d": "Square-well plate"
+      },
+      "explanations": {
+        "a": "",
+        "b": "",
+        "c": "V-bottom or U-bottom wells are preferred because they allow non-agglutinated cells to settle clearly under gravity.",
+        "d": ""
+      },
+      "correctAnswer": "c",
+      "difficulty": "beginner"
+    },
+    {
+      "question": "What is the typical RBC concentration used in hemagglutination assays?",
+      "answers": {
+        "a": "0.1%",
+        "b": "0.5–1%",
+        "c": "10%",
+        "d": "25%"
+      },
+      "explanations": {
+        "a": "",
+        "b": "A concentration of 0.5% to 1.0% RBCs is typical for hemagglutination assays.",
+        "c": "",
+        "d": ""
+      },
+      "correctAnswer": "b",
       "difficulty": "beginner"
     }
   ]
