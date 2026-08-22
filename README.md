@@ -21,5 +21,5 @@ SrNo | Name | Faculty or Student | Department | Institute | Email id
 :--|:--|:--|:--|:--|:--|
 1 | Prof. Sachin Kumar | Faculty | Biosciences and Bioengineering | Indian Institute of Technology Guwahati | sachinku@iitg.ac.in
 2 | Elika | Student | Biosciences and Bioengineering | Indian Institute of Technology Guwahati | e.elika@iitg.ac.in
-3 | Anchal | Student | Biosciences and Bioengineering | Indian Institute of Technology Guwahati | n.anchal@iitg.ac.in
+3 | Achal | Student | Biosciences and Bioengineering | Indian Institute of Technology Guwahati | n.achal@iitg.ac.in
 4 | Lakshya Choudhary | Student | Department of Design | Indian Institute of Technology Guwahati | c.lakshya@iitg.ac.in
