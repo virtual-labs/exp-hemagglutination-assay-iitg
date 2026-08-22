@@ -3,15 +3,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const steps = [
         {
             src: './images/Step1.mp4',
-            caption: 'Step 1: Chicken blood is centrifuged at 2000 rpm for 5 minutes. The supernatant is removed, and the RBCs are washed with PBS at least three times.'
+            caption: 'Step 1: Centrifuge the blood sample, then carefully discard the supernatant while retaining the red blood cell (RBC) pellet.'
         },
         {
             src: './images/Step2.mp4',
-            caption: 'Step 2: PBS is added to a 96-well V-bottom plate. Neat virus sample is added to the first column and serially diluted across the plate using a multichannel pipette.'
+            caption: 'Step 2: Wash the RBC pellet with PBS, then centrifuge to discard the supernatant, and repeat it 3 times and store the pellet in PBS at 4 °C.'
         },
         {
-            src: './images/Step3.mp4',
-            caption: 'Step 3: 1% RBC solution is added to each well and mixed gently. After incubating for 15-20 minutes, observe the wells for a tight button (negative) or a uniform red film (positive).'
+            src: './images/Step3HA.mp4',
+            caption: 'Step 3: Add PBS to the wells, and neat virus sample into the first column,perform two-fold serial dilutions using a multichannel pipette. After 15–20 min, observe the wells for a tight button (negative) or a uniform red film (positive).'
         }
     ];
 
