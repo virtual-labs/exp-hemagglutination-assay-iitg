@@ -1,1 +1,262 @@
-/* You CSS goes in here */
+/* Design System Tokens */
+:root {
+    --primary: hsl(217, 91%, 56%);
+    --primary-hover: hsl(217, 91%, 46%);
+    --accent: hsl(24, 94%, 53%);
+    --bg-surface: rgba(255, 255, 255, 0.85);
+    --bg-canvas: hsl(210, 40%, 98%);
+    --text-main: hsl(215, 28%, 17%);
+    --text-muted: hsl(215, 16%, 47%);
+    --border-glass: rgba(226, 232, 240, 0.8);
+    --shadow-soft: 0 10px 30px -10px rgba(0, 0, 0, 0.08);
+    --shadow-card: 0 20px 40px -15px rgba(0, 0, 0, 0.06);
+    --radius-lg: 16px;
+    --radius-md: 12px;
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Reset and Base Styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    background-color: var(--bg-canvas);
+    color: var(--text-main);
+    line-height: 1.5;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main Container */
+.simulation-container {
+    max-width: 900px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Header */
+.sim-header {
+    text-align: center;
+    margin-bottom: 0.5rem;
+}
+
+.sim-header h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: hsl(217, 91%, 36%);
+    letter-spacing: -0.025em;
+    margin-bottom: 0.25rem;
+}
+
+.sim-header p {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+/* Media Card (The Main Container) */
+.media-card {
+    background: var(--bg-surface);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid var(--border-glass);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-card);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Aspect-Ratio Wrapper */
+.media-wrapper {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-color: hsl(220, 14%, 94%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+/* Media Elements */
+.slider-media {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transition: opacity 0.4s ease-in-out, transform 0.4s ease-in-out;
+}
+
+.slider-media.fade-out {
+    opacity: 0;
+    transform: scale(0.98);
+}
+
+/* Glassmorphism Navigation Controls */
+.nav-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    color: var(--text-main);
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    transition: var(--transition-smooth);
+    z-index: 10;
+}
+
+.nav-btn:hover:not(:disabled) {
+    background: white;
+    color: var(--primary);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    transform: translateY(-50%) scale(1.05);
+}
+
+.nav-btn:active:not(:disabled) {
+    transform: translateY(-50%) scale(0.95);
+}
+
+.nav-btn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.nav-btn.prev {
+    left: 16px;
+}
+
+.nav-btn.next {
+    right: 16px;
+}
+
+.nav-btn svg {
+    transition: transform 0.2s ease;
+}
+
+.nav-btn.prev:hover svg {
+    transform: translateX(-2px);
+}
+
+.nav-btn.next:hover svg {
+    transform: translateX(2px);
+}
+
+/* Footer & Progress Info */
+.media-footer {
+    padding: 1.25rem 1.5rem;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    border-top: 1px solid var(--border-glass);
+}
+
+/* Progress Bar */
+.progress-bar-container {
+    width: 100%;
+    height: 4px;
+    background: hsl(210, 20%, 94%);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 33.33%;
+    background: linear-gradient(90deg, var(--primary), var(--accent));
+    border-radius: 2px;
+    transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.step-counter {
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+/* Dot Indicators */
+.slider-indicators {
+    display: flex;
+    gap: 8px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: hsl(210, 16%, 82%);
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.dot:hover {
+    background: var(--primary);
+    transform: scale(1.1);
+}
+
+.dot.active {
+    background: var(--primary);
+    transform: scale(1.25);
+    width: 16px;
+    border-radius: 5px;
+}
+
+/* Caption Card */
+.caption-card {
+    background: white;
+    border: 1px solid var(--border-glass);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-soft);
+    padding: 1.25rem 1.5rem;
+    min-height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slide-caption {
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: var(--text-main);
+    text-align: center;
+    line-height: 1.6;
+    animation: textFadeIn 0.4s ease forwards;
+}
+
+@keyframes textFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(4px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
